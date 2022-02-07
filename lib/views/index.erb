@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Bienvenu sur la page des potins</h1>
+    <h2>Clique sur les liens ci-dessous pour afficher les potins !</h2>
+    <% gossips.each_with_index do |gossip,index| %><!
+        <p><a href = 'gossips/<%= index %>' >Potin n°<%= index %></a><br/>
+        </p>
+  <% end %>
+  <h2> Pour rédiger un potin, c'est par ici :</h2>
+  <a href = 'gossips/new/'>Rédaction</a>
+  </body>
+</html>
